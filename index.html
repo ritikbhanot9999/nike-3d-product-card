@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Nike Zoom Winflo 6 | 3D Product</title>
+
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <nav class="navbar">
+      <div class="logo">NIKE</div>
+
+      <button class="cart">
+        🛒 Cart
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </nav>
+
+    <main class="product-card">
+
+      <!-- 3D PRODUCT -->
+      <div class="scene">
+
+        <div class="product">
+
+          <div class="product-inner" id="productInner">
+
+            <!-- FRONT -->
+            <div class="face front">
+
+              <div class="brand">NIKE</div>
+
+              <img src="shoes.png" alt="Nike Shoe" class="shoe">
+
+              <button class="flip-btn" onclick="flipProduct()" title="View alternate side">
+                ↻
+              </button>
+
+            </div>
+
+            <!-- BACK -->
+            <div class="face back">
+
+              <div class="brand">NIKE</div>
+
+              <img src="shoes2.png" alt="Nike Alternate Shoe" class="shoe">
+
+              <button class="flip-btn" onclick="flipProduct()" title="View front">
+                ↺
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- PRODUCT DETAILS -->
+      <section class="details">
+
+        <span class="tag">NEW RELEASE</span>
+
+        <h1>Zoom<br>Winflo 6</h1>
+
+        <p class="subtitle">
+          Lightweight performance running shoes designed
+          for everyday speed and comfort.
+        </p>
+
+        <div class="rating">
+          <span class="stars">★★★★★</span>
+          <strong> 4.8</strong>
+          <span> · 2,431 reviews</span>
+        </div>
+
+        <div class="price">
+          ₹5,999
+          <span class="old-price">₹7,499</span>
+        </div>
+
+        <!-- COLORS -->
+        <div class="section-title">COLOR</div>
+
+        <div class="colors">
+
+          <button class="color black active" onclick="selectColor(this, 'Black')" aria-label="Black">
+          </button>
+
+          <button class="color white" onclick="selectColor(this, 'White')" aria-label="White">
+          </button>
+
+          <button class="color red" onclick="selectColor(this, 'Red')" aria-label="Red">
+          </button>
+
+          <button class="color blue" onclick="selectColor(this, 'Blue')" aria-label="Blue">
+          </button>
+
+        </div>
+
+        <!-- SIZE -->
+        <div class="section-title">SELECT SIZE</div>
+
+        <div class="sizes">
+
+          <button class="size" onclick="selectSize(this)">6</button>
+          <button class="size" onclick="selectSize(this)">7</button>
+          <button class="size active" onclick="selectSize(this)">8</button>
+          <button class="size" onclick="selectSize(this)">9</button>
+          <button class="size" onclick="selectSize(this)">10</button>
+          <button class="size" onclick="selectSize(this)">11</button>
+
+        </div>
+
+        <!-- PURCHASE -->
+        <div class="purchase">
+
+          <div class="quantity">
+
+            <button onclick="changeQuantity(-1)">−</button>
+
+            <span id="quantity">1</span>
+
+            <button onclick="changeQuantity(1)">+</button>
+
+          </div>
+
+          <button class="add-btn" onclick="addToCart()">
+            Add to Bag — ₹<span id="totalPrice">5999</span>
+          </button>
+
+        </div>
+
+        <!-- FEATURES -->
+        <div class="features">
+
+          <div class="feature">
+            <strong>🚚 FREE DELIVERY</strong>
+            On orders above ₹999
+          </div>
+
+          <div class="feature">
+            <strong>↩ EASY RETURNS</strong>
+            30-day returns
+          </div>
+
+          <div class="feature">
+            <strong>✓ AUTHENTIC</strong>
+            100% genuine product
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+
+  <div class="notification" id="notification">
+    Added to your bag ✓
+  </div>
+
+  <script src="script.js"></script>
+
+
+
+
+</body>
+
+</html>
